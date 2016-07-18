@@ -9,6 +9,7 @@ public class Task {
 	private String id;
 	private String appId;
 	private Collection<Integer> ports;
+	private String state;
 	private String stagedAt;
 	private String startedAt;
 	private Collection<HealthCheckResult> healthCheckResults;
@@ -41,6 +42,10 @@ public class Task {
 	public Collection<Integer> getPorts() {
 		return ports;
 	}
+
+	public String getState() { return state; }
+
+	public void setState(String state) { this.state = state; }
 
 	public void setPorts(Collection<Integer> ports) {
 		this.ports = ports;
