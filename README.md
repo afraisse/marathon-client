@@ -1,29 +1,30 @@
 # marathon-client
 
-This project is a Java library for communicating with Marathon API. At this point this library supports version v2 of Marathon API, please refer [docs](https://mesosphere.github.io/marathon/docs/rest-api.html) for more details.
+This project is a Java library for communicating with Marathon API. At this point this library supports version v2 of Marathon API, please refer to the [docs](https://mesosphere.github.io/marathon/docs/rest-api.html) for more details.
 
 ## Using marathon-client in your maven project
 
 Add marathon-client as a dependency:
 
+For Marathon v1.x:
+
 ```
 <dependency>
   <groupId>com.mesosphere</groupId>
   <artifactId>marathon-client</artifactId>
-  <version>0.2.0</version>
+  <version>0.3.0</version>
 </dependency>
 ```
 
-Add the following repository:
+For Marathon v0.x:
 
 ```
-<repository>
-   <id>downloads.mesosphere.com</id>
-   <url>https://downloads.mesosphere.com/maven/</url>
-</repository>
+<dependency>
+  <groupId>com.mesosphere</groupId>
+  <artifactId>marathon-client</artifactId>
+  <version>0.2.1</version>
+</dependency>
 ```
-
-Please look at [releases](https://github.com/mesosphere/marathon-client/releases) page for more versions.
 
 ## Usage
 
